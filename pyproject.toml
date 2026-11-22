@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xmedi-mcp"
+version = "0.1.0"
+description = "极媒数据 MCP：用自己的 API Key 调用新媒体数据"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "XMedi Data", email = "351029365+xmedi-data@users.noreply.github.com" }]
+keywords = ["xmedi", "mcp", "wechat", "douyin", "xiaohongshu"]
+dependencies = [
+  "mcp>=1.2,<2",
+  "httpx>=0.27,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://www.xmedi.cn/mcp"
+Repository = "https://github.com/xmedi-data/xmedi-mcp"
+
+[project.scripts]
+xmedi-mcp = "xmedi_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["xmedi_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

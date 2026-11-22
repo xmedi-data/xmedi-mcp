@@ -1,0 +1,112 @@
+{
+  "tools": [
+    {
+      "name": "account_balance",
+      "slug": "account.balance",
+      "skill": "shared",
+      "method": "GET",
+      "path": "/account/balance",
+      "paging": "none",
+      "billable": false
+    },
+    {
+      "name": "wechat_search_articles",
+      "slug": "wechat.search.articles",
+      "skill": "xmedi-social-search",
+      "method": "POST",
+      "path": "/wechat/search/articles",
+      "paging": "cursor",
+      "billable": true
+    },
+    {
+      "name": "douyin_search_videos",
+      "slug": "douyin.search.videos",
+      "skill": "xmedi-social-search",
+      "method": "POST",
+      "path": "/douyin/search/videos",
+      "paging": "cursor",
+      "billable": true
+    },
+    {
+      "name": "xhs_search_notes",
+      "slug": "xhs.notes.search",
+      "skill": "xmedi-social-search",
+      "method": "POST",
+      "path": "/xhs/notes/search",
+      "paging": "cursor",
+      "billable": true
+    },
+    {
+      "name": "douyin_video_detail",
+      "slug": "douyin.videos.detail",
+      "skill": "xmedi-social-search",
+      "method": "POST",
+      "path": "/douyin/videos/detail",
+      "paging": "none",
+      "billable": true
+    },
+    {
+      "name": "xhs_note_detail",
+      "slug": "xhs.notes.detail",
+      "skill": "xmedi-social-search",
+      "method": "POST",
+      "path": "/xhs/notes/detail",
+      "paging": "none",
+      "billable": true
+    },
+    {
+      "name": "douyin_user_posts",
+      "slug": "douyin.users.posts",
+      "skill": "xmedi-account-posts",
+      "method": "POST",
+      "path": "/douyin/users/posts",
+      "paging": "cursor",
+      "billable": true
+    },
+    {
+      "name": "xhs_user_notes",
+      "slug": "xhs.users.notes",
+      "skill": "xmedi-account-posts",
+      "method": "POST",
+      "path": "/xhs/users/notes",
+      "paging": "cursor",
+      "billable": true
+    },
+    {
+      "name": "douyin_resolve_id",
+      "slug": "douyin.ids.resolve",
+      "skill": "xmedi-comments",
+      "method": "POST",
+      "path": "/douyin/ids/resolve",
+      "paging": "none",
+      "billable": true
+    },
+    {
+      "name": "douyin_video_comments",
+      "slug": "douyin.videos.comments",
+      "skill": "xmedi-comments",
+      "method": "POST",
+      "path": "/douyin/videos/comments",
+      "paging": "cursor",
+      "billable": true
+    },
+    {
+      "name": "xhs_resolve_id",
+      "slug": "xhs.ids.resolve",
+      "skill": "xmedi-comments",
+      "method": "POST",
+      "path": "/xhs/ids/resolve",
+      "paging": "none",
+      "billable": true
+    },
+    {
+      "name": "xhs_note_comments",
+      "slug": "xhs.notes.comments",
+      "skill": "xmedi-comments",
+      "method": "POST",
+      "path": "/xhs/notes/comments",
+      "paging": "cursor",
+      "billable": true
+    }
+  ]
+}
